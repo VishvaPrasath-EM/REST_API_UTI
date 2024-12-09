@@ -1,0 +1,5 @@
+com\example\uti\services\utiServices.class
+com\example\uti\entity\utiEntity.class
+com\example\uti\repositry\utiRepository.class
+com\example\uti\UtiApplication.class
+com\example\uti\controller\utiController.class
