@@ -39,12 +39,16 @@ public class utiServices {
         return "details removed "+ id;
     }
 //    UPDATE
-    public utiEntity updateDetails(utiEntity details)
-    {
+    public utiEntity updateDetails(utiEntity details) {
+
         utiEntity existingDetails = repository.findById(details.getId()).orElse(null);
-        existingDetails.setRole(details.getRole());
-        existingDetails.setTeam_members(details.getTeam_members());
-        return  repository.save(existingDetails);
+
+        if (existingDetails != null) {
+            existingDetails.setRole(details.getRole());
+            existingDetails.setTeam_members(details.getTeam_members());
+            return repository.save(existingDetails);
+        }
+        return null;
 
     }
 }

@@ -19,5 +19,27 @@ public class utiEntity {
       private String Team_members;
       private String Role;
 
+      public Long getId() {
+            return id;
+      }
 
+      public void setId(Long id) {
+            this.id = id;
+      }
+
+      public String getRole() {
+            return Role;
+      }
+
+      public void setRole(String role) {
+            Role = role;
+      }
+
+      public String getTeam_members() {
+            return Team_members;
+      }
+
+      public void setTeam_members(String team_members) {
+            Team_members = team_members;
+      }
 }
